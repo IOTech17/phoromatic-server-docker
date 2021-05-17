@@ -1,4 +1,4 @@
 [submodule "phoronix-test-suite"]
-	path = avclassplusplus
+	path = pts
 	url = https://github.com/phoronix-test-suite/phoronix-test-suite.git
 	branch = tags/v10.4.0
