@@ -9,7 +9,6 @@ services:
     volumes:
       - ptsconf:/var/lib/phoronix-test-suite
       - ptscache:/var/cache/phoronix-test-suite
-      - 
 volumes:
   ptsconf:
   ptscache:
