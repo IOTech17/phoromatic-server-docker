@@ -1,0 +1,12 @@
+version: '3.7'
+services:
+  phoromatic-server:
+    build: .
+    image: acwg/phoromatic-server:10.40
+    restart: always
+    ports:
+      - "15000:15000"
+    volumes:
+      - ptsfiles:/home/pts/.phoronix-test-suite/
+volumes:
+  ptsfiles:
