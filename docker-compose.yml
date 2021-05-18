@@ -7,6 +7,9 @@ services:
     ports:
       - "15000:15000"
     volumes:
-      - ptsfiles:/home/pts/.phoronix-test-suite/
+      - ptsconf:/var/lib/phoronix-test-suite
+      - ptscache:/var/cache/phoronix-test-suite
+      - 
 volumes:
-  ptsfiles:
+  ptsconf:
+  ptscache:
