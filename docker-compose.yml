@@ -2,7 +2,7 @@ version: '3.7'
 services:
   phoromatic-server:
     build: .
-    image: acwhiteglint/phoromatic-server:10.4.0
+    image: acwhiteglint/phoromatic-server:10.8.0
     restart: always
     ports:
       - "15000:15000"
