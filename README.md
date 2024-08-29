@@ -13,10 +13,10 @@ services:
       - ptsconf:/var/lib/phoronix-test-suite
       - ptscache:/var/cache/phoronix-test-suite
     healthcheck:
-      test: wget --spider -S http://localhost:15000 2>&1 > /dev/null | grep -q "200 OK$"
+      test: ["CMD-SHELL", "wget --no-check-certificate --spider -S http://localhost:15000 || exit 1"]
       interval: 30s
-      timeout: 1m
-      retries: 2
+      timeout: 10s
+      retries: 3
 volumes:
   ptsconf:
   ptscache:
