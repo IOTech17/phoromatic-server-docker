@@ -1,4 +1,4 @@
-FROM debian:latest
+FROM debian:stable-slim
 
 RUN apt-get update \
     && DEBIAN_FRONTEND="noninteractive" TZ="Europe/Dublin" apt-get install -y git php8.2 php8.2-simplexml php8.2-dom php8.2-gd php8.2-sqlite3 php8.2-curl php8.2-zip php8.2-bz2 wget
