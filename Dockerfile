@@ -1,7 +1,7 @@
 FROM debian:stable-slim
 
 RUN apt-get update \
-    && DEBIAN_FRONTEND="noninteractive" TZ="Europe/Dublin" apt-get install -y git php8.2 php8.2-simplexml php8.2-dom php8.2-gd php8.2-sqlite3 php8.2-curl php8.2-zip php8.2-bz2 wget
+    && DEBIAN_FRONTEND="noninteractive" TZ="Europe/Dublin" apt-get install -y git php8.4 php8.4-simplexml php8.4-dom php8.4-gd php8.4-sqlite3 php8.4-curl php8.4-zip php8.4-bz2 wget
 
 WORKDIR /home/pts
 
